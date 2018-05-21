@@ -6,7 +6,7 @@ try
       stage('build')
       {
           sh '''
-             ant -f build.xml
+             ant /build.xml
              '''
       }
       echo 'This will run only if successful'
@@ -34,6 +34,3 @@ try
       echo 'This will run if successful'
       }
 
-      echo 'This will always run'
-  }
-}
