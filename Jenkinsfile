@@ -7,8 +7,8 @@ try
       {
           checkout scm
           sh '''
-             ls -la 
-             ant -f /build.xml
+             ls -la
+             ant -f build.xml
              '''
       }
       echo 'This will run only if successful'
