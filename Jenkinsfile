@@ -26,4 +26,14 @@ try
       def currentResult = currentBuild.result ?: 'SUCCESS'
       if (currentResult == 'UNSTABLE')
       {
+          echo 'This will run only if the run was marked as unstable'
+      }
 
+      if (currentResult == 'SUCCESS')
+      {
+      echo 'This will run if successful'
+      }
+
+      echo 'This will always run'
+  }
+}
