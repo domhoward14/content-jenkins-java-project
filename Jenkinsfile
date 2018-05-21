@@ -5,6 +5,7 @@ try
 
       stage('build')
       {
+          checkout scm
           sh '''
              ls -la 
              ant -f /build.xml
