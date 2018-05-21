@@ -34,3 +34,7 @@ try
       echo 'This will run if successful'
       }
 
+      echo 'This will always run'
+  }
+}
+
